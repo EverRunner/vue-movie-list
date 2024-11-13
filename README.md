@@ -1,141 +1,126 @@
-# Movie Streaming Dashboard
+<p align="center"><img width="160" src="./logo.svg" alt="Vue logo"></p>
 
-## Overview
+<h1 align="center">
+  Vue Movie list
+  <br />
+  <small>(Vue 3 + Typescript + Vite)</small>
+</h1>
 
-Welcome to the Movie Streaming Dashboard project. This application is designed to provide users with a seamless experience for browsing and viewing movies. Built with JavaScript and Vue.js, the dashboard connects to an external movie database to fetch and display movie information dynamically.
+This template should help get you started developing with Vue 3 and Typescript in Vite.
 
-## Table of Contents
+## Plugins
 
-1. [Objective](#objective)
-2. [Project Setup](#project-setup)
-   - [Prerequisites](#prerequisites)
-   - [Installation](#installation)
-3. [Usage](#usage)
-   - [Connecting to the Movie Database](#connecting-to-the-movie-database)
-   - [Features to Implement](#features-to-implement)
-<!-- 4. [Development Guidelines](#development-guidelines) -->
-4. [Testing](#testing)
-5. [Deployment](#deployment)
-<!-- 6. [Contributing](#contributing) -->
-6. [License](#license)
-7. [Contact](#contact)
+- Router: [Vue Router](https://next.router.vuejs.org/)
+- State Management: [Pinia](https://pinia.vuejs.org/)
+- Http client: [Axios](https://www.npmjs.com/package/axios)
+- Testing: [Vitest](https://vitest.dev/)
+- Linting: [ESlint](https://eslint.org/)
+- Formatting: [Prettier](https://prettier.io/)
 
-## Objective
+## Recommended Utilities
 
-The goal of this project is to implement a movie streaming dashboard that allows users to explore a wide range of movies, view detailed information, and search for specific titles. The application is built using JavaScript and Vue.js, leveraging modern web development practices.
+- JavaScript utility library: [Lodash](https://lodash.com/)
+- JavaScript date library: [date-fns](https://date-fns.org/)
 
-## Project Setup
+## Recommended IDE Setup
 
-### Prerequisites
+- Install the IDE [VSCode](https://code.visualstudio.com/).
+- Install all recommended extensions.
 
-Before you begin, ensure you have met the following requirements:
+## Recommended Documentations
 
-- **Node.js**: Install the latest version from [nodejs.org](https://nodejs.org/).
-- **npm**: Node.js package manager, which is included with Node.js installation.
-- **Vue.js**: Familiarity with Vue.js framework is recommended.
+- [Vue 3](https://v3.vuejs.org/)
+- Learing Platform: [Vue Mastery](https://www.vuemastery.com/)
 
-### Installation
+## Getting started
 
-Follow these steps to set up the project locally:
+To get stared clone the vue-movie-list repository to you machine. Then navigate into the root folder of the project and install the npm dependencies.
 
-1. **Clone the repository:**
-
-   Open your terminal and run:
-
-   ```bash
-   git clone <repository-url>
-   cd <repository-directory>
-   ```
-
-2. **Install project dependencies:**
-
-   Run the following command to install all necessary packages:
-
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server:**
-
-   Launch the application with:
-
-   ```bash
-   npm run dev
-   ```
-
-   The application will be accessible at `http://localhost:8080` by default.
-
-## Usage
-
-### Connecting to the Movie Database
-
-The application connects to the **CodeSubmit Movie Database** to fetch movie data. Ensure you use the following authentication header in your requests:
-
-```
-Authorization: Bearer Wookie2021
-```
-
-### Features to Implement
-
-- **Design Implementation**: Follow the design specifications provided in the `/Designs` folder.
-- **API Integration**: Fetch movies from the API and display them, categorized appropriately.
-- **Detail View**: Implement a detailed view for each movie, showcasing additional information.
-- **Navigation and Bookmarking**: Ensure smooth navigation and bookmarking functionality.
-- **Search Functionality**: Implement a search feature using the endpoint `https://wookie.codesubmit.io/movies?q=<search_term>`.
-
-<!-- ## Development Guidelines
-
-- Adhere to JavaScript best practices for clean and maintainable code.
-- Organize Vue components logically, ensuring reusability and clarity.
-- Document your code thoroughly to facilitate understanding and maintenance. -->
-
-## Testing
-
-- In this project, I have implemented tests for the HomePage and DetailPage components using the Vitest framework.
 ```bash
-   npm run test
-   ```
-<!-- - Implement tests to verify the functionality and reliability of your code. -->
-<!-- - Use a testing framework such as **Jest** or **Mocha** to write and run your tests. -->
+git clone https://github.com/EverRunner/vue-movie-list.git
+cd vue-movie-list
+npm install
+```
 
-## Deployment
+After setting up the project we can serve our application with:
 
-To prepare your application for production, follow these steps:
+```bash
+npm run dev
+```
 
-1. **Build the project:**
+The development sever runs at `http://localhost:3000/`.
 
-   Run the build command to generate production-ready files:
+## NPM Scripts
 
-   ```bash
-   npm run build
-   ```
+### install
 
-2. **Deploy the `dist` directory:**
+Installs all the dependencies, which are listed in the `package.json`.
 
-   Upload the contents of the `dist` directory to your preferred hosting service.
+```bash
+npm install
+```
 
-<!-- ## Contributing
+### serve
 
-We welcome contributions! To contribute:
+Serves the application on the development server, which runs at `http://localhost:3000/`.
 
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Commit your changes with clear and descriptive messages.
-4. Submit a pull request detailing your changes and the problem they solve. -->
+```bash
+npm run dev
+```
+
+### docs
+
+Starts the local storybook server at `http://localhost:6006/`.
+
+```bash
+npm run docs
+```
+
+### test
+
+### Unit
+
+Run unit tests with vitest.
+
+```bash
+npm run test
+
+# or run test with a watcher and a nice ui
+npm run test:ui
+```
+
+### End 2 End
+
+Starts the development server and runs the cypress E2E test against it.
+
+```bash
+npm run test:e2e
+```
+
+### build
+
+Build the application for production release. The builded application will be in the `dist` folder.
+
+```bash
+npm run build
+```
+
+### lint
+
+Lints the whole src folder. Linting is also executed before the build.
+
+```bash
+npm run lint
+```
+
+### format
+
+With the help of the tool prettier we format all our source files.
+
+```bash
+npm run format
+```
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
-## Contact
-
-For questions, feedback, or support, please contact:
-
-- **[Your Name]**
-- **Email**: [Your Email]
-
----
-
-Thank you for your interest in the Movie Streaming Dashboard project. We look forward to your contributions and feedback.
-
-The Media Vision Group | MVG Team
+Apache-2.0 Licensed | Copyright © 2021-present Gery Hirschfeld & Contributors
