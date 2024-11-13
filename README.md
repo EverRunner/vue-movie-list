@@ -89,14 +89,6 @@ npm run test
 npm run test:ui
 ```
 
-### End 2 End
-
-Starts the development server and runs the cypress E2E test against it.
-
-```bash
-npm run test:e2e
-```
-
 ### build
 
 Build the application for production release. The builded application will be in the `dist` folder.
@@ -120,7 +112,3 @@ With the help of the tool prettier we format all our source files.
 ```bash
 npm run format
 ```
-
-## License
-
-Apache-2.0 Licensed | Copyright © 2021-present Gery Hirschfeld & Contributors
